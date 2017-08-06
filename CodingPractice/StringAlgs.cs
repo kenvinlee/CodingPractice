@@ -113,30 +113,14 @@ namespace CodingPractice
 
         public Boolean isAnagram(String s1, String s2)
         {
-            bool isAnagram = true;
-
             if (s1.Length != s2.Length)
                 return false;
 
             Dictionary<char, int> dic1 = hashString(s1);
             Dictionary<char, int> dic2 = hashString(s2);
 
-            foreach (KeyValuePair<char, int> kvp in dic1)
-            {
-                if (dic2.ContainsKey(kvp.Key))
-                {
-                    if (dic2[kvp.Key] == kvp.Value)
-                    {
-                        isAnagram = false;
-                    }
-                }
-                else
-                {
-                    isAnagram = false;
-                }
-            }
-            
-            return isAnagram;
+            return dic1.OrderBy(kvp => kvp.Key).SequenceEqual(dic2.OrderBy(kvp => kvp.Key));
+
         }
     }
 }
