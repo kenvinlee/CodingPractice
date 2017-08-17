@@ -8,6 +8,9 @@ namespace CodingPractice
 {
     class Stack
     {
+        // basic stack class with some extra functionality done using doubly linked list
+        // could be done using singly linked list to be slightly more efficient
+
         private Node top;
         private int size = 0;
 
@@ -58,6 +61,7 @@ namespace CodingPractice
             
         }
 
+        // shows you the top node without actually popping it off
         public Node peek()
         {
             return top;
