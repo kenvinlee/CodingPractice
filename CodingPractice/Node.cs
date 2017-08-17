@@ -9,8 +9,8 @@ namespace CodingPractice
     public class Node
     {
         private int nodeValue;
-        private Node parent;
-        private Node child;
+        private Node parent = null;
+        private Node child = null;
 
         public Node()
         {
