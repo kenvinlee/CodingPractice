@@ -21,11 +21,12 @@ namespace CodingPractice
         {
             this.nodeValue = value;
         }
-
-        public Node(int value, Node child)
+                
+        public Node(int value, Node parent, Node child)
         {
             this.nodeValue = value;
             this.child = child;
+            this.parent = parent;
         }
 
         public void setValue(int value)
