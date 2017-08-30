@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVLTree.cs" />
+    <Compile Include="BSTree.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="Node.cs" />
+    <Compile Include="Queue.cs" />
     <Compile Include="Stack.cs" />
     <Compile Include="StringAlgs.cs" />
     <Compile Include="TestingGround.cs" />

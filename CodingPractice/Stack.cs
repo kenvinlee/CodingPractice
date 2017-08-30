@@ -64,6 +64,7 @@ namespace CodingPractice
         // shows you the top node without actually popping it off
         public Node peek()
         {
+            // top is null if stack is empty
             return top;
         }
     }
